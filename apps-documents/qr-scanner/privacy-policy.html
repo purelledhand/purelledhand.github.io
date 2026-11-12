@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - QR Scanner</title>
+    <style>
+        :root {
+            --bg: #EEF1F6;
+            --card: #FFFFFF;
+            --text: #1F2937;
+            --muted: #6B7280;
+            --accent: #3D7BFF;
+            --line: #E5E7EB;
+            --note: #F3F6FF;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --card: #16181D;
+                --text: #E5E7EB;
+                --muted: #9CA3AF;
+                --accent: #6E9BFF;
+                --line: #2A2D34;
+                --note: #1B2233;
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            min-height: 100vh;
+            padding: 20px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .header {
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        h1 { font-size: 30px; font-weight: 800; margin-bottom: 8px; }
+        .last-updated { font-size: 14px; color: var(--muted); }
+
+        .summary {
+            background: var(--note);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 32px;
+        }
+
+        .section { margin-bottom: 28px; }
+        h2 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+        p { font-size: 16px; margin-bottom: 10px; }
+
+        ul { list-style: none; }
+        li { font-size: 16px; margin-bottom: 8px; padding-left: 20px; position: relative; }
+        li::before { content: "•"; position: absolute; left: 4px; color: var(--accent); font-weight: bold; }
+
+        a { color: var(--accent); font-weight: 600; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .container { padding: 24px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 18px; }
+            p, li { font-size: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">QR Scanner · Last updated: November 12, 2026</p>
+        </div>
+
+        <div class="summary">
+            <p><strong>In short:</strong> QR Scanner works on your device. It has no accounts, no ads, no analytics and no tracking. We do not collect, store or sell your personal information, and we do not run any servers that receive your data.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Data stored on your device</h2>
+            <p>The following data is stored only on your device and is never sent to us:</p>
+            <ul>
+                <li><strong>History</strong> — the content of codes you scan or create, their type and format, favorites and the time they were saved.</li>
+                <li><strong>My QR</strong> — the contact details you choose to enter (name, phone, email, organization, address, website) to create your own contact code.</li>
+                <li><strong>Settings</strong> — your preferences such as sound, vibration, theme and link preview.</li>
+            </ul>
+            <p>You can delete history items in the app at any time. Uninstalling the app deletes all of this data.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Camera, photos and other device features</h2>
+            <ul>
+                <li><strong>Camera</strong> — used to scan codes. The camera feed is analyzed on your device in real time. No images or video are recorded or uploaded.</li>
+                <li><strong>Photos you pick</strong> — when you scan from an image, only the image you select through the system photo picker is read, once, on your device. It is not stored or uploaded. The app does not get access to your photo library.</li>
+                <li><strong>Saving images</strong> — when you save a code image, the app adds it to your photos. It does not read your existing photos.</li>
+                <li><strong>Location</strong> — requested only when you tap “Use current location” while creating a location code. Your coordinates are filled into that code and are not sent anywhere. Background location is never used.</li>
+                <li><strong>Clipboard</strong> — the app reads the clipboard only when you choose to create a code from clipboard content, and copies to the clipboard only when you ask it to (or when you turn on auto-copy in Settings).</li>
+                <li><strong>Wi-Fi</strong> — when you scan a Wi-Fi code and choose to connect, the network name and password are passed to your device's system so it can join the network.</li>
+            </ul>
+            <p>All of these permissions are optional except the camera for live scanning, and you can change them in your device settings at any time.</p>
+        </div>
+
+        <div class="section">
+            <h2>3. When the app connects to the internet</h2>
+            <ul>
+                <li><strong>Link preview</strong> (on by default, can be turned off in Settings) — when you scan a web link, the app requests that page directly from your device to show its title, icon and final destination. This is like opening the page in a browser: the website receives your IP address and standard request information. No data goes to us.</li>
+                <li><strong>Actions you choose</strong> — opening a link, searching the web or a product, looking up a book, getting directions or sharing a code hands that content to your browser, maps app or the app you share with. Their own privacy policies then apply.</li>
+                <li><strong>Code scanning engine</strong> — scanning is performed by Google ML Kit, which runs on your device. Scanned images and code contents are not sent to Google. As described in Google's <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">ML Kit terms</a>, ML Kit may contact Google servers to receive updates and may send anonymous metrics about API performance and usage, along with basic device and app information.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Data sharing</h2>
+            <p>We do not collect your personal information, so we do not sell, trade or share it with anyone. Data leaves your device only in the cases described above, and only directly between your device and the service involved.</p>
+        </div>
+
+        <div class="section">
+            <h2>5. Children's privacy</h2>
+            <p>QR Scanner does not knowingly collect personal information from anyone, including children under 13.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Changes to this policy</h2>
+            <p>If the app's data practices change, for example if advertising is added, this page will be updated before that version is released, and the date above will change.</p>
+        </div>
+
+        <div class="section">
+            <h2>7. Contact</h2>
+            <p>For privacy questions, contact us at <a href="mailto:purelledhand@gmail.com">purelledhand@gmail.com</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
