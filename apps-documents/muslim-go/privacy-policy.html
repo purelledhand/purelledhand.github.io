@@ -5,145 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Muslim Go</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg: #EEF1F6;
+            --card: #FFFFFF;
+            --text: #1F2937;
+            --muted: #6B7280;
+            --accent: #3D7BFF;
+            --line: #E5E7EB;
+            --note: #F3F6FF;
         }
 
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --card: #16181D;
+                --text: #E5E7EB;
+                --muted: #9CA3AF;
+                --accent: #6E9BFF;
+                --line: #2A2D34;
+                --note: #1B2233;
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
             line-height: 1.6;
-            color: #5D4E37;
-            background: linear-gradient(135deg, #F5E6D3 0%, #E8D4B8 100%);
+            color: var(--text);
+            background: var(--bg);
             min-height: 100vh;
-            padding: 20px;
+            padding: 20px 16px;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: #FFFFFF;
+            background: var(--card);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid #F5E6D3;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--line);
         }
 
-        .icon {
-            font-size: 48px;
-            margin-bottom: 16px;
-        }
+        h1 { font-size: 30px; font-weight: 800; margin-bottom: 8px; }
+        .last-updated { font-size: 14px; color: var(--muted); }
 
-        h1 {
-            font-size: 32px;
-            font-weight: 900;
-            color: #5D4E37;
-            margin-bottom: 12px;
-        }
-
-        .last-updated {
-            font-size: 14px;
-            color: #8B7355;
-            font-weight: 500;
-        }
-
-        .section {
+        .summary {
+            background: var(--note);
+            border-radius: 12px;
+            padding: 16px 20px;
             margin-bottom: 32px;
         }
 
-        h2 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #5D4E37;
-            margin-bottom: 12px;
-        }
+        .section { margin-bottom: 28px; }
+        .note { margin: 36px 0 0; }
+        .summary p:last-child { margin-bottom: 0; }
+        h2 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+        p { font-size: 16px; margin-bottom: 10px; }
 
-        p {
-            font-size: 16px;
-            color: #5D4E37;
-            margin-bottom: 12px;
-        }
+        ul { list-style: none; }
+        li { font-size: 16px; margin-bottom: 8px; padding-left: 20px; position: relative; }
+        li::before { content: "•"; position: absolute; left: 4px; color: var(--accent); font-weight: bold; }
 
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        li {
-            font-size: 16px;
-            color: #5D4E37;
-            margin-bottom: 8px;
-            padding-left: 24px;
-            position: relative;
-        }
-
-        li::before {
-            content: "•";
-            position: absolute;
-            left: 8px;
-            color: #6B9071;
-            font-weight: bold;
-        }
-
-        .contact {
-            color: #00A8E8;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        .compliance-badge {
-            background: #F0F8F0;
-            border: 2px dashed #6B9071;
-            border-radius: 12px;
-            padding: 24px;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .compliance-badge-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #6B9071;
-            margin-bottom: 8px;
-        }
-
-        .compliance-badge-text {
-            font-size: 14px;
-            color: #9B8B6C;
-        }
+        a { color: var(--accent); font-weight: 600; text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 24px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 18px;
-            }
-
-            p, li {
-                font-size: 14px;
-            }
+            .container { padding: 24px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 18px; }
+            p, li { font-size: 15px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="icon">🛡️</div>
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: November 2024</p>
+            <p class="last-updated">Muslim Go · Last updated: November 2024</p>
         </div>
 
         <div class="section">
@@ -197,12 +141,11 @@
         <div class="section">
             <h2>7. Contact Us</h2>
             <p>For privacy-related questions or concerns, please contact us at:</p>
-            <p><a href="mailto:purelledhand@gmail.com" class="contact">purelledhand@gmail.com</a></p>
+            <p><a href="mailto:purelledhand@gmail.com">purelledhand@gmail.com</a></p>
         </div>
 
-        <div class="compliance-badge">
-            <div class="compliance-badge-title">✓ Shariah-Compliant</div>
-            <div class="compliance-badge-text">We respect Islamic values and protect your privacy with the utmost care</div>
+        <div class="summary note">
+            <p><strong>✓ Shariah-Compliant</strong> — We respect Islamic values and protect your privacy with the utmost care.</p>
         </div>
     </div>
 </body>
