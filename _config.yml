@@ -40,4 +40,7 @@ plugins:
   - jekyll-sitemap
 
 include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
+# Blog content hidden: remove the entries below the comment to publish it again.
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/",
+  # hidden blog content
+  "_posts", "_pages", "index.html", "search.json"]
